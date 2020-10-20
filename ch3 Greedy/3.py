@@ -16,3 +16,4 @@ def solution(n, k):
 
     return answer
   
+  #Need to be more familiar with quotient/remainder thinking

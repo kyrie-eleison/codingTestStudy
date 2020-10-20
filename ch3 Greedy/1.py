@@ -8,3 +8,6 @@ def solution(array, m, k):
         return List[-1]*m
     else:
         return (m//(k+1))*(first*k + second) + (m%(k+1))*first
+
+
+#Need to be more familiar with quotient/remainder way of thinking

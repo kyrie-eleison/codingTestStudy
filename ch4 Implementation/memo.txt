@@ -1,0 +1,18 @@
+Part 2. Ch4: Implementation
+Oct.20.2020
+
+1. Implementation Problem indicates a kind of problem which is easy to think of about its algorithm,
+but hard to implement as a source code.
+
+2. Examples: long code, lots of conditions in the problem, lack of experience(of standard libraries)
+
+3. Brute Force, Simulation included.
+*Brute Force: Finding every possible way to solve the problem
+(solve if the data is less than about 1,000,000)
+
+4. Memory Problem: make a list of length(int) less than 10,000,000(=~ 40MB)
+
+5. Speed Problem: Python solves 20,000,000 ops in a second.
+-> if the time limit is 1sec & data length =~ 1,000,000 -> we need O(nlog(n)) algorithm
+
+
