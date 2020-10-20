@@ -1,0 +1,10 @@
+Greedy Algorithm
+
+1. Find the best available option in any case.
+
+2. But this greedy algorithm has so many variations, which means memorizing may be burdensome. 
+We have no choice but to meet as many exercises as possible.
+
+3. When we think up a possible solution, we need to keep ask ourselves of
+the justifibility of that solution.
+
