@@ -1,4 +1,5 @@
-Greedy Algorithm
+Part 2. Ch3: Greedy Algorithm
+Oct.20.2020
 
 1. Find the best available option in any case.
 
