@@ -16,3 +16,4 @@ but hard to implement as a source code.
 -> if the time limit is 1sec & data length =~ 1,000,000 -> we need O(nlog(n)) algorithm
 
 
+
