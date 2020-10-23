@@ -1,0 +1,9 @@
+We already have studied BFS/DFS from Leetcode.
+
+However, for things to node:
+
+1. Stack has very close relation with recursion.
+
+2. BFS -> Queue, DFS -> Stack
+
+3. The code gets simpler if we use recursion.
