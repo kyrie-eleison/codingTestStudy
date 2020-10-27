@@ -71,3 +71,35 @@ def quick(array):
     
     return quick(left) + middle + [pivot] + quick(right)
     
+#Count Sort
+#When k = max - min is rather small
+#O(n+k)
+#not based on comparing methods
+
+def count(array):
+    
+    minIdx = 0
+    maxIdx = 0
+
+    for k in range(len(array)):
+        if array[k] < array[minIdx]:
+            minIdx = k
+        if array[k] > array[maxIdx]:
+            maxIdx = k
+    
+    k = array[maxIdx] - array[minIdx]
+    countList = [0]*(k+1)
+
+    for num in array:
+        countList[num] += 1
+
+    returnArray = []
+    for i in range(len(countList)):
+        if countList[i] > 0:
+            while countList[i] > 0:
+                returnArray.append(i)
+                countList[i] -= 1
+
+    return returnArray
+
+    
