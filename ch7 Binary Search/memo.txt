@@ -1,0 +1,14 @@
+Search Methods:
+
+1. Sequential Search: check every elements
+- O(n)
+- When the array is not sorted
+
+2. Binary Search: check only half of the last half of...
+- O(logn)
+- When the array is already sorted
+
+Tree Data Structure:
+
+Binary Search Tree: all the subnodes of the left child <= 
+root <= all the subnodes of the right child, for all subnodes of the Tree
