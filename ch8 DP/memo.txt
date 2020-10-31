@@ -1,0 +1,12 @@
+What is DP?
+
+- Dividing big Prob to smaller ones, and if that one is already solved 
+before, do not solve it again.
+
+- Top-down(- Memoization(=caching)): using recursion
+- Bottom-up: using loop
+
+- Tip: 
+
+if sequential search is hard, think of DP
+Also, rather think of bottom-up than top-down
