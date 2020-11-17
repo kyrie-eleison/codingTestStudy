@@ -72,7 +72,7 @@ for i in range(1, n+1):
     table[i][i] = 0
 
 for _ in range(m):
-    a,b,c = map(int, input.slice())
+    a,b,c = map(int, input().slice())
     graph[a] = (b,c)
 
 for i in range(1, m+1):
@@ -83,7 +83,7 @@ for i in range(1, n+1):
     for j in range(1, n+1):
         if j != i:
             for k in range(1, n+1):
-                if (k =! i) and (k != j):
+                if (k != i) and (k != j):
                     D_jk = table[j][k]
                     D_ji, D_ik = table[j][i], table[i][k]
 
