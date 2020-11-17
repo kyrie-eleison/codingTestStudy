@@ -11,3 +11,18 @@ def solution(array):
     for j in range(1, len(d)):
         if d[j] == 0:
             return j
+
+
+##book's solution
+
+def solution2(array):
+
+    array.sort()
+    target = 1
+
+    for num in array:
+        if target < num:
+            break
+        target += num
+
+    return target
