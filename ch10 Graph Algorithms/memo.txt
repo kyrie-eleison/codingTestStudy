@@ -1,0 +1,16 @@
+Graph Algorithms:
+
+1. Disjoint Set Algorithm
+- How to deal with sets
+- implement set union and find operations through tree data structure
+- Need to keep in touch with parent => root node
+- Application: Detecting Loops in a Graph
+
+2. Kruskal Algorithm
+- Greedy Algorithm for finding the cheapest way of constructing a spanning tree
+- Sort the edges in the order of ascending cost, and include each of them into the 
+spanning tree if and only if it does not form a loop
+
+3. Topology Sort
+- Sorting nodes which are connected by directed edges
+- Use Queue
