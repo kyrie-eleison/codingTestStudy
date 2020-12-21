@@ -31,4 +31,3 @@ def possible(array, length, n):
                 return True
             
     return False
-
