@@ -37,6 +37,51 @@ def dijkstra(start):
         
         current = get_smallest_node()
         print("####")
+
+#Using Set Data Structure
+
+infty = int(10e9)
+
+def dijkstra(graph, start):
+  n = len(graph)-1
+  table = [infty]*(n+1)
+  not_visited = set([i+1 for i in range(n)])
+
+  for (next_node, weight) in graph[start]:
+    table[next_node] = weight
+
+  not_visited = not_visited - {start}
+
+  while not_visited:
+    next_node = find_min(table, not_visited)
+    print(next_node)
+
+    to_add = table[next_node]
+    not_visited = not_visited - {next_node}
+
+    for (other_node, weight) in graph[next_node]:
+      table[other_node] = min(table[other_node], to_add + weight)
+  
+  return table
+    
+  
+
+def find_min(array, index):
+  n = len(array)
+
+  min_number = int(10e9)
+  min_index = -1
+  for i in index:
+    if array[i] < min_number:
+      min_number = array[i]
+      min_index = i
+
+  return min_index
+
+graph = [[], [(2, 2), (3, 5), (4, 1)], [(3, 3), (4, 2)], [(2, 3), (6, 5)], [(3, 3), (5, 1)], [(3, 1), (6, 2)], []]
+start = 1
+
+print(dijkstra(graph, start))
     
 #Revised Dijkstra
 

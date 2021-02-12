@@ -1,5 +1,5 @@
 def root_finder(graph, parent, node):
-  if parent[node] != node:
+if parent[node] != node:
     parent[node] = root_finder(graph, parent, parent[node])
   return parent[node]
 
